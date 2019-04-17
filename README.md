@@ -1,2 +1,2 @@
-# Force.com-Enterprise-Architecture-Third-Edition
-Force.com Enterprise Architecture – Third Edition, published by Packt
+# Lightning-Platform-Enterprise-Architecture-Third-Edition
+Lightning Platform Enterprise Architecture – Third Edition, published by Packt
