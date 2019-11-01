@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/flsDemo": [
+                "flsDemo/flsDemo.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/race": [
+                "race/race.js"
+            ],
+            "c/raceCalendar": [
+                "raceCalendar/raceCalendar.js"
+            ],
+            "c/raceResults": [
+                "raceResults/raceResults.js"
+            ],
+            "c/raceSetup": [
+                "raceSetup/raceSetup.js"
+            ],
+            "c/raceStandings": [
+                "raceStandings/raceStandings.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

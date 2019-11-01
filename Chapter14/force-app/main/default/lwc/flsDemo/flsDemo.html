@@ -1,0 +1,46 @@
+<template>
+    <lightning-card>
+        <div class="slds-box slds-m-around_x-small">
+            <p>Race__c.Status__c Accessible is {statusAccessible}</p>
+            <p>Race__c.Status__c Updateable is {statusUpdateable}</p>
+            <p>Race__c.FastestLapBy__c Accessible is {fastestLapByAccessible}</p>
+            <p>Race__c.FastestLapBy__c Updateable is {fastestLapByUpdateable}</p>
+        </div>
+        <lightning-record-edit-form record-id={recordId} object-api-name={objectApiName}>
+            <lightning-layout horizontal-align="space">
+                <lightning-layout-item padding="around-small">
+                    <lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+                        <lightning-accordion-section name="A" label="Use Case A: Using lightning-input-field">
+                            <lightning-input-field field-name={statusField}></lightning-input-field>
+                            <lightning-input-field field-name={fastestLapByField}></lightning-input-field>
+                        </lightning-accordion-section>
+                        <lightning-accordion-section name="B" label="Use Case B: Using lightning-output-field">
+                            <lightning-output-field field-name={statusField}></lightning-output-field>
+                            <lightning-output-field field-name={fastestLapByField}></lightning-output-field>
+                        </lightning-accordion-section>
+                        <lightning-accordion-section name="C" label="Use Case C: Using lightning-input">
+                            <lightning-input type="text" value={race.Status__c} label='Status'></lightning-input>
+                            <lightning-input type="text" value={race.FastestLapBy__c} label='Fastest Lap By'></lightning-input>
+                        </lightning-accordion-section>
+                    </lightning-accordion>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                        <lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+                            <lightning-accordion-section name="D" label="Use Case D: Using lightning-formatted-text">
+                                <p>Status <lightning-formatted-text value={race.Status__c}></lightning-formatted-text></p>
+                                <p>Fastest Lap By <lightning-formatted-text value={race.FastestLapBy__c}></lightning-formatted-text></p>
+                            </lightning-accordion-section>
+                            <lightning-accordion-section name="E" label="Use Case E: Using SObject Field Expressions">
+                                <p>The value of Status__c is '{race.Status__c}'</p>
+                                <p>The value of FastestLapBy__c is '{race.FastestLapBy__c}'</p>
+                            </lightning-accordion-section>
+                            <lightning-accordion-section name="F" label="Use Case F: Using Controller Property Expressions">
+                                <p>The value of Status__c is '{status}'</p>
+                                <p>The value of FastestLapBy__c is '{fastestLapBy}'</p>
+                            </lightning-accordion-section>
+                        </lightning-accordion>
+                    </lightning-layout-item>    
+            </lightning-layout>        
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

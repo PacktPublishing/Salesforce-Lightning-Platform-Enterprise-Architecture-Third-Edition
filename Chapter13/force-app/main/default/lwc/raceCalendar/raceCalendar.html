@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Race Calendar" icon-name="standard:campaign">
+        <template if:true={calendar.data}>
+            <div class="slds-p-around_medium lgc-bg">
+                <template for:each={calendar.data} for:item="race">
+                    <ul class="slds-has-dividers_bottom-space" key={race.Id}>
+                        <c-race
+                            race-id={race.Id}
+                            name={race.Name} 
+                            race-date={race.RaceDate}
+                            completed={race.Completed}                            
+                            location={race.Location} 
+                            selected={race.Selected}
+                            onselect={handleSelect}>
+                        </c-race>
+                    </ul>
+                </template>
+            </div>
+        </template>
+    </lightning-card>
+</template>

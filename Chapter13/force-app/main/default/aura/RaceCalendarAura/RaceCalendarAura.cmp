@@ -1,0 +1,45 @@
+<aura:component controller="RaceCalendarAuraComponentController" implements="flexipage:availableForAllPageTypes" access="global">
+    <!-- Attributes -->
+    <aura:attribute name="calendar" type="Object" access="private"/>    
+    <!-- Event handlers -->    
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <!-- Component markup -->
+    <lightning:card >
+        <aura:set attribute="title">
+            <lightning:icon iconName="standard:campaign" size="small"/>&nbsp;Race Calendar
+        </aura:set>
+    </lightning:card>        
+    <div class="slds-p-around--small">
+        <ul class="slds-has-dividers--around-space">
+          <aura:iteration items="{!v.calendar.Remaining}" var="race">
+              <li class="{!'slds-item ' + (race.Selected ? 'selectedRace' : '')}" 
+                  onclick="{!c.onRaceClicked}" 
+                  data-raceid="{!race.Id}" data-racename="{!race.Name}">
+                <div class="slds-tile slds-tile--board">
+                  <h4 class="slds-text-heading--small">{!race.Name}</h4>
+                  <div class="slds-tile__detail slds-text-body--small">
+                    <p>{!race.Location}</p>
+                    <p>{!race.RaceDate}</p>
+                  </div>
+                </div>
+              </li>
+          </aura:iteration>    
+          <li class="slds-p-around--small">
+            <div class="slds-text-heading--small">Completed races</div>
+          </li>
+          <aura:iteration items="{!v.calendar.Completed}" var="race">
+              <li class="{!'slds-item ' + (race.Selected ? 'selectedRace' : '')}" 
+                  onclick="{!c.onRaceClicked}"
+                  data-raceid="{!race.Id}" data-racename="{!race.Name}">
+                <div class="slds-tile slds-tile--board" aura:id="{!race.Id}">
+                  <h4 class="slds-text-heading--small">{!race.Name}</h4>
+                  <div class="slds-tile__detail slds-text-body--small">
+                    <p>{!race.Location}</p>
+                    <p>{!race.RaceDate}</p>
+                  </div>
+                </div>
+              </li>
+          </aura:iteration>    
+        </ul>
+    </div>
+</aura:component>

@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/flsDemo": [
+                "flsDemo/flsDemo.js"
+            ]
+        }
+    }
+}

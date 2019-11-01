@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Home_Page_Default</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Race_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Race__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Race Management</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Race_Overview</tabs>
+    <tabs>Driver__c</tabs>
+    <tabs>Car__c</tabs>
+    <tabs>Team__c</tabs>
+    <tabs>Season__c</tabs>
+    <tabs>Race__c</tabs>
+    <tabs>RaceData__c</tabs>
+    <tabs>RaceLapHistorySummary__c</tabs>
+    <tabs>RaceStatistics__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>RaceManagementUtilityBar</utilityBar>
+</CustomApplication>

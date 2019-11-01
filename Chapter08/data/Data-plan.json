@@ -1,0 +1,26 @@
+[
+    {
+        "sobject": "Driver__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "Driver__c.json"
+        ]
+    },
+    {
+        "sobject": "Season__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "Season__c.json"
+        ]
+    },
+    {
+        "sobject": "Race__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "Race__c.json"
+        ]
+    }
+]

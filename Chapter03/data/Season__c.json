@@ -1,0 +1,12 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Season__c",
+                "referenceId": "Season__cRef1"
+            },
+            "Name": "2019",
+            "Year__c": "2019"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+<apex:page standardController="Contestant__c" extensions="OutOfRaceController" recordSetVar="Contestants" action="{!markAsDNF}">
+	<apex:sectionHeader title="Drivers out of Race"/>
+	<apex:form >
+	<apex:pageBlock >
+		<apex:pageBlockTable value="{!Selected}" var="Contestant">
+			<apex:column value="{!Contestant.DriverRace__c}"/>
+			<apex:column value="{!Contestant.DNF__c}"/>
+			<apex:column headerValue="{!$ObjectType.Contestant__c.fields.RetirementReason__c.Label}">
+				<apex:inputField value="{!Contestant.RetirementReason__c}"/>
+			</apex:column>
+		</apex:pageBlockTable>
+	</apex:pageBlock>
+	<!--
+	<apex:pageBlock>
+		<apex:pageBlockTable value="{!Selected}" var="Contestant">
+			<apex:column value="{!Contestant.DriverRace__c}"/>
+			<apex:column headerValue="{!$ObjectType.Contestant__c.fields.RetirementReason__c.Label}">
+				<input type="checkbox" checked="{!Contestant__c.DNF__c}" disabled="true"/>
+			</apex:column>
+			<apex:column headerValue="{!$ObjectType.Contestant__c.fields.RetirementReason__c.Label}">
+				<apex:inputField value="{!Contestant.RetirementReason__c}"/>
+			</apex:column>
+		</apex:pageBlockTable>
+	</apex:pageBlock>
+	-->
+	<!--
+	<table>
+	<apex:repeat value="{!Selected}" var="Contestant">	
+		<tr>
+			<td>{!Contestant.DriverRace__c}</td>
+			<td>{!Contestant.DNF__c}</td>
+			<td>{!Contestant.RetirementReason__c}</td>
+		</tr>
+	</apex:repeat>
+	</table>
+	-->
+	<apex:commandButton value="Save" action="{!save}"/>
+	<apex:commandButton value="Cancel" action="{!cancel}"/>
+	</apex:form>
+</apex:page>

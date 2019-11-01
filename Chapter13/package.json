@@ -1,0 +1,27 @@
+{
+  "name": "lightning-platform-enterprise-architecture-third-edition",
+  "version": "1.0.0",
+  "description": "Lightning Platform Enterprise Architecture - Third Edition",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "lwc-jest",
+    "test:unit:watch": "lwc-jest --watch",
+    "test:unit:debug": "lwc-jest --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afawcett/lightning-platform-enterprise-architecture-third-edition.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afawcett/lightning-platform-enterprise-architecture-third-edition/issues"
+  },
+  "homepage": "https://github.com/afawcett/lightning-platform-enterprise-architecture-third-edition#readme",
+  "devDependencies": {
+    "@salesforce/lwc-jest": "^0.5.1"
+  },
+  "dependencies": {
+    "jest-junit": "^7.0.0"
+  }
+}

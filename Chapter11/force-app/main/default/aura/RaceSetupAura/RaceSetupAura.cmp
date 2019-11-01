@@ -1,0 +1,41 @@
+<aura:component controller="RaceSetupComponentController" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global">
+
+    <!-- Attributes -->
+    <aura:attribute name="race" type="Race__c" />
+    <aura:attribute name="drivers" type="Object[]"/>
+
+    <!-- Event handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+
+    <div class="slds-page-header" role="banner">
+        <p class="slds-text-heading--label">{!v.race.Name}</p>
+        <h1 class="slds-page-header__title slds-m-right--small slds-truncate slds-align-left">Add Drivers</h1>
+    </div>
+    <div class="slds-form--stacked">
+        <div class="slds-form-element driversList slds-scrollable--y">
+            <table class="slds-table slds-table--bordered slds-table--fixed-layout" role="grid">
+              <thead>
+                <tr class="slds-text-title--caps">
+                  <th>Driver Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                 <aura:iteration items="{!v.drivers}" var="driver">
+                    <tr class="slds-hint-parent">
+                      <th scope="row" data-label="Driver Name">
+                        <div class="slds-truncate">
+                            <lightning:input value="{!driver.Selected}" type="checkbox" 
+                                checked="{!driver.Selected}" label="{!driver.Name}" />
+                        </div>
+                      </th>
+                    </tr>
+                 </aura:iteration>
+              </tbody>
+            </table>
+        </div>        
+        <div class="slds-form-element">
+            <lightning:button label="Cancel" onclick="{!c.onCancel}"/>
+            <lightning:button label="Add Drivers" onclick="{!c.onAddDrivers}"/>
+        </div>
+    </div>
+</aura:component>

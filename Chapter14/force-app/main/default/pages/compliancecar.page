@@ -1,0 +1,6 @@
+<apex:page standardController="Car__c" extensions="ComplianceController" action="{!verify}">
+	<apex:pageMessages />
+	<apex:form >
+		<apex:commandButton value="Cancel" action="{!cancel}"/>
+	</apex:form>
+</apex:page>

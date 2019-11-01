@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Driver__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Driver</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Only Active Drivers can be contestants in a race.</errorMessage>
+        <filterItems>
+            <field>Driver__c.Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <infoMessage>Only Drivers who&#39;s status is active are permitted.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Driver__c</referenceTo>
+    <relationshipLabel>Contestants</relationshipLabel>
+    <relationshipName>Contestants</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

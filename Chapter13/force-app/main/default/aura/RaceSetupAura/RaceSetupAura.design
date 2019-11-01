@@ -1,0 +1,5 @@
+<design:component label="Race Setup (Aura)">
+    <sfdc:objects>
+        <sfdc:object>Race__c</sfdc:object>
+    </sfdc:objects>
+</design:component>

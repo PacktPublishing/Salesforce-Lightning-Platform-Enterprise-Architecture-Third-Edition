@@ -1,0 +1,6 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global">
+    <c:raceSetup 
+        raceId="{!v.recordId}" 
+        onclose="{!c.handleClose}" 
+        onadded="{!c.handleAdded}"></c:raceSetup>
+</aura:component>	

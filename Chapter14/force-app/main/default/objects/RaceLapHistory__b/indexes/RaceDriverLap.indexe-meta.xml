@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Index xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RaceDriverLap</fullName>
+    <fields>
+        <name>RaceId__c</name>
+        <sortDirection>ASC</sortDirection>
+    </fields>
+    <fields>
+        <name>DriverId__c</name>
+        <sortDirection>ASC</sortDirection>
+    </fields>
+    <fields>
+        <name>Lap__c</name>
+        <sortDirection>ASC</sortDirection>
+    </fields>
+    <label>Race, Driver, Lap</label>
+</Index>

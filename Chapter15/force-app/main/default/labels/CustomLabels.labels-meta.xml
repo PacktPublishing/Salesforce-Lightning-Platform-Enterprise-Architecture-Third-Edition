@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ComplianceFailuresFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ComplianceFailuresFound.</shortDescription>
+        <value>Compliance failures found.</value>
+    </labels>
+    <labels>
+        <fullName>NotImplemented</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NotImplemented</shortDescription>
+        <value>Not implemented</value>
+    </labels>
+    <labels>
+        <fullName>UnableToVerifyCompliance</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UnableToVerifyCompliance</shortDescription>
+        <value>Unable to verify compliance.</value>
+    </labels>
+</CustomLabels>

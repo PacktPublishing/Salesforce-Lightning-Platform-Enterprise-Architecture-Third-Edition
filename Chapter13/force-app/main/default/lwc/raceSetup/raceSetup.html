@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-page-header" role="banner">
+        <p class="slds-text-heading--label"></p>
+        <h1 class="slds-page-header__title slds-m-right--small slds-truncate slds-align-left">Add Drivers</h1>
+    </div>
+    <div class="slds-form--stacked">
+        <div class="slds-form-element driversList slds-scrollable--y">
+            <lightning-datatable 
+              key-field="RecordId"
+              data={drivers.data} 
+              columns={columns}>
+          </lightning-datatable>    
+        </div>        
+        <div class="slds-form-element">
+            <lightning-button label="Cancel" onclick={handleCancel}></lightning-button>
+            <lightning-button label="Add Drivers" onclick={handleAddDrivers}></lightning-button>
+        </div>
+    </div>
+</template>

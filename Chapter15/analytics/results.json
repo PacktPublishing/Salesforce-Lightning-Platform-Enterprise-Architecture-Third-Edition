@@ -1,0 +1,162 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "results_csv",
+      "label": "results.csv",
+      "name": "results_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "resultId",
+          "name": "resultId",
+          "type": "Text",
+          "label": "resultId"
+        },
+        {
+          "fullyQualifiedName": "raceId",
+          "name": "raceId",
+          "type": "Text",
+          "label": "raceId"
+        },
+        {
+          "fullyQualifiedName": "driverId",
+          "name": "driverId",
+          "type": "Text",
+          "label": "driverId"
+        },
+        {
+          "fullyQualifiedName": "constructorId",
+          "name": "constructorId",
+          "type": "Text",
+          "label": "constructorId"
+        },
+        {
+          "fullyQualifiedName": "number",
+          "name": "number",
+          "type": "Numeric",
+          "label": "number",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "grid",
+          "name": "grid",
+          "type": "Numeric",
+          "label": "grid",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "position",
+          "name": "position",
+          "type": "Numeric",
+          "label": "position",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "positionText",
+          "name": "positionText",
+          "type": "Text",
+          "label": "positionText"
+        },
+        {
+          "fullyQualifiedName": "positionOrder",
+          "name": "positionOrder",
+          "type": "Numeric",
+          "label": "positionOrder",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "points",
+          "name": "points",
+          "type": "Numeric",
+          "label": "points",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "laps",
+          "name": "laps",
+          "type": "Numeric",
+          "label": "laps",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "time",
+          "name": "time",
+          "type": "Text",
+          "label": "time"
+        },
+        {
+          "fullyQualifiedName": "milliseconds",
+          "name": "milliseconds",
+          "type": "Numeric",
+          "label": "milliseconds",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "fastestLap",
+          "name": "fastestLap",
+          "type": "Numeric",
+          "label": "fastestLap",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "rank",
+          "name": "rank",
+          "type": "Numeric",
+          "label": "rank",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "fastestLapTime",
+          "name": "fastestLapTime",
+          "type": "Text",
+          "label": "fastestLapTime"
+        },
+        {
+          "fullyQualifiedName": "fastestLapSpeed",
+          "name": "fastestLapSpeed",
+          "type": "Text",
+          "label": "fastestLapSpeed"
+        },
+        {
+          "fullyQualifiedName": "status",
+          "name": "status",
+          "type": "Text",
+          "label": "status"
+        }
+      ]
+    }
+  ]
+}

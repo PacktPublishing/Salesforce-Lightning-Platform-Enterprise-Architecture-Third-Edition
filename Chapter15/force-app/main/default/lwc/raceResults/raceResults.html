@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title={raceTitle} icon-name="standard:poll">
+        <lightning-datatable 
+            key-field="Driver"
+            data={results.data} 
+            columns={columns}
+            hide-checkbox-column="true">
+        </lightning-datatable>    
+    </lightning-card>
+</template>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Call_QRCode_Service</name>
+        <label>Call QR Code Service</label>
+        <locationX>334</locationX>
+        <locationY>102</locationY>
+        <actionName>QRCode_qrcode__Service</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Display_QRCode</targetReference>
+        </connector>
+        <inputParameters>
+            <name>qrcode_input_message</name>
+            <value>
+                <elementReference>Message</elementReference>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>EncodedQRCode</assignToReference>
+            <name>QRCodeResponse_qrcode_200</name>
+        </outputParameters>
+    </actionCalls>
+    <interviewLabel>GenerateQRCode {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Generate QR Code</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Display_QRCode</name>
+        <label>Display QR Code</label>
+        <locationX>494</locationX>
+        <locationY>47</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>DisplayQRCode</name>
+            <fieldText>&lt;p&gt;{!ImageForQRCode}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Enter_Message</name>
+        <label>Enter Message</label>
+        <locationX>181</locationX>
+        <locationY>50</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Call_QRCode_Service</targetReference>
+        </connector>
+        <fields>
+            <name>Message</name>
+            <dataType>String</dataType>
+            <fieldText>Message</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Enter_Message</startElementReference>
+    <status>Draft</status>
+    <textTemplates>
+        <name>ImageForQRCode</name>
+        <text>&lt;img src=&quot;{!EncodedQRCode}&quot;/&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>EncodedQRCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

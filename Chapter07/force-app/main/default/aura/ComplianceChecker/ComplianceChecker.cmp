@@ -1,0 +1,12 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForRecordHome" controller="ComplianceCheckerComponent" access="global">
+    <aura:dependency resource="markup://force:editRecord" type="EVENT" />
+    <aura:attribute name="category" type="String" default="success" />
+    <aura:attribute name="messages" type="String[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler event="force:refreshView" action="{!c.onRefreshView}"/>
+    <div class="{!'slds-box slds-theme--' + v.category}">
+        <aura:iteration items="{!v.messages}" var="message">
+            <p><ui:outputText value="{!message}"/></p>
+        </aura:iteration>
+    </div>
+</aura:component>

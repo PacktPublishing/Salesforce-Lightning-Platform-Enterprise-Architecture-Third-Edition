@@ -1,0 +1,20 @@
+<apex:page standardController="Race__c" lightningStylesheets="true" extensions="RaceSummaryController" action="{!loadSummary}">
+    <apex:outputPanel>
+        <apex:pageBlock>
+            <apex:pageBlockTable value="{!Summary}" var="summaryRow">
+                <apex:column value="{!summaryRow.Position}">
+                    <apex:facet name="header">Position</apex:facet>
+                </apex:column>
+                <apex:column value="{!summaryRow.Driver}">
+                    <apex:facet name="header">Driver</apex:facet>
+                </apex:column>
+                <apex:column value="{!summaryRow.Team}">
+                    <apex:facet name="header">Team</apex:facet>
+                </apex:column>
+                <apex:column value="{!summaryRow.Car}">
+                    <apex:facet name="header">Car</apex:facet>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:outputPanel> 
+</apex:page>

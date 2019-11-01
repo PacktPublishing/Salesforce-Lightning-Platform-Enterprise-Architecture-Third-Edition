@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>QRCode</label>
+    <namedCredential>QRCode</namedCredential>
+    <schema>{
+  &quot;swagger&quot;: &quot;2.0&quot;,
+  &quot;info&quot;: {
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;title&quot;: &quot;QRCode Service&quot;
+  },
+  &quot;host&quot;: &quot;localhost:3000&quot;,
+  &quot;basePath&quot;: &quot;/&quot;,
+  &quot;schemes&quot;: [
+    &quot;http&quot;,
+    &quot;https&quot;
+  ],
+  &quot;consumes&quot;: [
+    &quot;application/json&quot;
+  ],
+  &quot;produces&quot;: [
+    &quot;application/json&quot;
+  ],
+  &quot;paths&quot;: {
+    &quot;/qrcode&quot;: {
+      &quot;post&quot;: {
+        &quot;description&quot;: &quot;Returns QRCode to the caller&quot;,
+        &quot;operationId&quot;: &quot;qrcode&quot;,
+        &quot;consumes&quot;: [
+          &quot;application/json&quot;
+        ],
+        &quot;parameters&quot;: [
+          {
+            &quot;in&quot;: &quot;body&quot;,
+            &quot;name&quot;: &quot;body&quot;,
+            &quot;description&quot;: &quot;Message to convert to a QR Code&quot;,
+            &quot;schema&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [
+                &quot;message&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;message&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              }
+            }
+          }
+        ],
+        &quot;responses&quot;: {
+          &quot;200&quot;: {
+            &quot;description&quot;: &quot;Success&quot;,
+            &quot;schema&quot;: {
+              &quot;$ref&quot;: &quot;#/definitions/QRCodeResponse&quot;
+            }
+          }
+        }
+      }
+    },
+    &quot;/schema&quot;: {}
+  },
+  &quot;definitions&quot;: {
+    &quot;QRCodeResponse&quot;: {
+      &quot;required&quot;: [
+        &quot;qrcode&quot;
+      ],
+      &quot;properties&quot;: {
+        &quot;qrcode&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      }
+    }
+  }
+}</schema>
+    <schemaType>OpenApi</schemaType>
+    <schemaUrl>/schema</schemaUrl>
+    <status>Complete</status>
+</ExternalServiceRegistration>

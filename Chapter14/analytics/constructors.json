@@ -1,0 +1,48 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "constructors_csv",
+      "label": "constructors.csv",
+      "name": "constructors_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "constructorId",
+          "name": "constructorId",
+          "type": "Text",
+          "label": "constructorId"
+        },
+        {
+          "fullyQualifiedName": "constructorRef",
+          "name": "constructorRef",
+          "type": "Text",
+          "label": "constructorRef"
+        },
+        {
+          "fullyQualifiedName": "name",
+          "name": "name",
+          "type": "Text",
+          "label": "name"
+        },
+        {
+          "fullyQualifiedName": "nationality",
+          "name": "nationality",
+          "type": "Text",
+          "label": "nationality"
+        },
+        {
+          "fullyQualifiedName": "url",
+          "name": "url",
+          "type": "Text",
+          "label": "url"
+        }
+      ]
+    }
+  ]
+}

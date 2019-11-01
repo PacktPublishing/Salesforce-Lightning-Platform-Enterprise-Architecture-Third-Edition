@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Standings" icon-name="standard:reward">
+        <lightning-datatable 
+            key-field="Driver"
+            data={standings.data} 
+            columns={columns}
+            hide-checkbox-column="true">
+        </lightning-datatable>    
+    </lightning-card>
+</template>

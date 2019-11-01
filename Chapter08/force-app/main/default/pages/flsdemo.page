@@ -1,0 +1,42 @@
+<apex:page controller="FLSDemoController" showHeader="true" sidebar="true" tabStyle="Race__c">
+<apex:form >
+	<apex:pageMessage summary="Race__c.Status__c Accessible is {!$ObjectType.Race__c.fields.Status__c.Accessible}" severity="info"/>
+	<apex:pageMessage summary="Race__c.Status__c Updatable is {!$ObjectType.Race__c.fields.Status__c.Updateable}" severity="info"/>
+	<apex:pageMessage summary="Race__c.FastestLapBy__c Accessible is {!$ObjectType.Race__c.fields.FastestLapBy__c.Accessible}" severity="info"/>
+	<apex:pageMessage summary="Race__c.FastestLapBy__c Updatable is {!$ObjectType.Race__c.fields.FastestLapBy__c.Updateable}" severity="info"/>
+	<apex:pageBlock >
+		<apex:pageBlockSection title="Use Case A: Using apex:inputField">
+			<apex:inputField value="{!Race.Status__c}"/>
+			<apex:inputField value="{!Race.FastestLapBy__c}"/>
+		</apex:pageBlockSection>
+		<apex:pageBlockSection title="Use Case B: Using apex:outputField">
+			<apex:outputField value="{!Race.Status__c}"/>
+			<apex:outputField value="{!Race.FastestLapBy__c}"/>
+		</apex:pageBlockSection>
+		<apex:pageBlockSection title="Use Case C: Using apex:inputText">
+			<apex:inputText value="{!Race.Status__c}"/>
+			<apex:inputText value="{!Race.FastestLapBy__c}"/>
+		</apex:pageBlockSection>
+		<apex:pageBlockSection title="Use Case D: Using apex:outputText">
+			<apex:outputText value="{!Race.Status__c}"/>
+			<apex:outputText value="{!Race.FastestLapBy__c}"/>
+		</apex:pageBlockSection>
+		<apex:pageBlockSection title="Use Case E: Using SObject Field Expressions">
+			<apex:pageBlockSection >
+			The value of Status__c is '{!Race.Status__c}'
+			</apex:pageBlockSection>
+			<apex:pageBlockSection >
+			The value of FastestLapBy__c is '{!Race.FastestLapBy__c}'
+			</apex:pageBlockSection>
+		</apex:pageBlockSection>
+		<apex:pageBlockSection title="Use Case F: Using Controller Property Expressions">
+			<apex:pageBlockSection >
+			The value of Status__c is '{!Status}'
+			</apex:pageBlockSection>
+			<apex:pageBlockSection >
+			The value of FastestLapBy__c is '{!FastestLapBy}'
+			</apex:pageBlockSection>
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Fired when the user selects a race" access="global">
+    <aura:attribute name="raceId" type="string"/>
+    <aura:attribute name="raceName" type="string"/>
+</aura:event>

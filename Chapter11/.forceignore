@@ -1,0 +1,5 @@
+**/jsconfig.json
+**/.eslintrc.json
+# Profiles
+**/profiles/**
+**/settings/**

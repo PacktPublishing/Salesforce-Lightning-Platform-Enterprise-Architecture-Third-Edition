@@ -1,0 +1,34 @@
+<aura:component controller="RaceStandingsComponentController" implements="flexipage:availableForAllPageTypes" access="global">
+    <!-- Attributes -->
+    <aura:attribute name="standings" type="Object[]" access="private"/>    
+    <!-- Event handlers -->    
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <!-- Component markup -->
+    <lightning:card >
+        <aura:set attribute="title">
+            <lightning:icon iconName="standard:reward" size="small"/>&nbsp;Standings            
+        </aura:set>
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+          <thead>
+            <tr class="slds-text-title--caps">
+              <th scope="col"></th>
+              <th scope="col">Driver</th>
+              <th scope="col">Team</th>
+              <th scope="col">Wins</th>
+              <th scope="col">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <aura:iteration items="{!v.standings}" var="standing">
+                <tr>
+                  <th scope="row" data-label="Position">{!standing.Position}</th>
+                  <td data-label="Driver">{!standing.Driver}</td>
+                  <td data-label="Team">{!standing.Team}</td>
+                  <td data-label="Wins">{!standing.Wins}</td>
+                  <td data-label="Points">{!standing.Points}</td>
+                </tr>
+            </aura:iteration>
+          </tbody>
+        </table>      
+    </lightning:card>    
+</aura:component>

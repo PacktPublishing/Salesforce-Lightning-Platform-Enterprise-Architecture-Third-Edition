@@ -1,0 +1,49 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Race__c",
+                "referenceId": "Race__cRef1"
+            },
+            "Name": "Spa",
+            "Season__c" : "@Season__cRef1",
+            "FastestLapBy__c": "@Driver__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Race__c",
+                "referenceId": "Race__cRef2"
+            },
+            "Name": "Melbourne",
+            "Season__c" : "@Season__cRef1",
+            "FastestLapBy__c": "@Driver__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Race__c",
+                "referenceId": "Race__cRef3"
+            },
+            "Name": "Shanghai",
+            "Season__c" : "@Season__cRef1",
+            "FastestLapBy__c": "@Driver__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Race__c",
+                "referenceId": "Race__cRef4"
+            },
+            "Name": "Monte Carlo",
+            "Season__c" : "@Season__cRef1",
+            "FastestLapBy__c": "@Driver__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Race__c",
+                "referenceId": "Race__cRef5"
+            },
+            "Name": "Budapest",
+            "Season__c" : "@Season__cRef1",
+            "FastestLapBy__c": "@Driver__cRef1"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+<template>
+    <lightning-tile label={name} href="/" type="media" class={raceStyle} onclick={raceClicked}>
+        <lightning-avatar slot="media" fallback-icon-name={raceIcon}></lightning-avatar>
+        <ul class="slds-list_vertical slds-has-dividers_right">
+            <li class="slds-item">{location}</li>
+            <li class="slds-item">{raceDate}</li>
+        </ul>
+    </lightning-tile>        
+</template>

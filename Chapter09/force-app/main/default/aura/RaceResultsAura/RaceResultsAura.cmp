@@ -1,0 +1,36 @@
+<aura:component controller="RaceResultsComponentController" implements="force:hasRecordId,flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,lightning:availableForFlowScreens" access="global">
+    <!-- Attributes -->
+    <aura:attribute name="recordName" type="String" access="private"/>
+    <aura:attribute name="results" type="Object[]" access="private"/>    
+    <!--  Event handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler event="c:RaceSelectedAura" action="{!c.handleRaceSelectedEvent}"/>
+    <!--  Component markup -->
+    <lightning:card >
+        <aura:set attribute="title">
+            <lightning:icon iconName="standard:poll" size="small"/>&nbsp;Results {!v.recordName}            
+        </aura:set>
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+          <thead>
+            <tr class="slds-text-title--caps">
+              <th scope="col">Driver</th>
+              <th scope="col">Team</th>
+              <th scope="col">Grid</th>
+              <th scope="col">Race Time</th>
+              <th scope="col">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <aura:iteration items="{!v.results}" var="result">
+            <tr>
+              <th scope="row">{!result.Driver}</th>
+              <td>{!result.Team}</td>
+              <td>{!result.Grid}</td>
+              <td>{!result.RaceTime}</td>
+              <td>{!result.Points}</td>
+            </tr>
+            </aura:iteration>
+          </tbody>
+        </table>      
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,86 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "circuits_csv",
+      "label": "circuits.csv",
+      "name": "circuits_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "circuitId",
+          "name": "circuitId",
+          "type": "Text",
+          "label": "circuitId"
+        },
+        {
+          "fullyQualifiedName": "circuitRef",
+          "name": "circuitRef",
+          "type": "Text",
+          "label": "circuitRef"
+        },
+        {
+          "fullyQualifiedName": "name",
+          "name": "name",
+          "type": "Text",
+          "label": "name"
+        },
+        {
+          "fullyQualifiedName": "location",
+          "name": "location",
+          "type": "Text",
+          "label": "location"
+        },
+        {
+          "fullyQualifiedName": "country",
+          "name": "country",
+          "type": "Text",
+          "label": "country"
+        },
+        {
+          "fullyQualifiedName": "lat",
+          "name": "lat",
+          "type": "Numeric",
+          "label": "lat",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 5,
+          "format": "0.0####",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "lng",
+          "name": "lng",
+          "type": "Numeric",
+          "label": "lng",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 6,
+          "format": "0.00####",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "alt",
+          "name": "alt",
+          "type": "Numeric",
+          "label": "alt",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "url",
+          "name": "url",
+          "type": "Text",
+          "label": "url"
+        }
+      ]
+    }
+  ]
+}

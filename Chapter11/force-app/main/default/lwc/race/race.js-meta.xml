@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="race">
+    <apiVersion>45.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Race Information</masterLabel>
+    <description>Displays key information about a Race</description>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
+            <property name="name" type="String" label="Name" />
+            <property name="location" type="String" label="Location"/>
+            <property name="raceDate" type="String" label="Race Date" />
+            <property name="selected" type="Boolean" label="Show as Selected"/>
+            <property name="completed" type="Boolean" label="Show as Completed"/>
+        </targetConfig>
+    </targetConfigs>    
+</LightningComponentBundle>

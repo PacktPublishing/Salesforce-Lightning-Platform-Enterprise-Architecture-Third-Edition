@@ -1,0 +1,71 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "races_csv",
+      "label": "races.csv",
+      "name": "races_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "raceId",
+          "name": "raceId",
+          "type": "Text",
+          "label": "raceId"
+        },
+        {
+          "fullyQualifiedName": "year",
+          "name": "year",
+          "type": "Text",
+          "label": "year"
+        },
+        {
+          "fullyQualifiedName": "round",
+          "name": "round",
+          "type": "Numeric",
+          "label": "round",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "circuitId",
+          "name": "circuitId",
+          "type": "Text",
+          "label": "circuitId"
+        },
+        {
+          "fullyQualifiedName": "name",
+          "name": "name",
+          "type": "Text",
+          "label": "name"
+        },
+        {
+          "fullyQualifiedName": "date",
+          "name": "date",
+          "type": "Date",
+          "label": "date",
+          "format": "yyyy-MM-dd"
+        },
+        {
+          "fullyQualifiedName": "time",
+          "name": "time",
+          "type": "Text",
+          "label": "time"
+        },
+        {
+          "fullyQualifiedName": "url",
+          "name": "url",
+          "type": "Text",
+          "label": "url"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "driver_csv",
+      "label": "driver.csv",
+      "name": "driver_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "driverId",
+          "name": "driverId",
+          "type": "Text",
+          "label": "driverId"
+        },
+        {
+          "fullyQualifiedName": "driverRef",
+          "name": "driverRef",
+          "type": "Text",
+          "label": "driverRef"
+        },
+        {
+          "fullyQualifiedName": "number",
+          "name": "number",
+          "type": "Text",
+          "label": "number"
+        },
+        {
+          "fullyQualifiedName": "code",
+          "name": "code",
+          "type": "Text",
+          "label": "code"
+        },
+        {
+          "fullyQualifiedName": "forename",
+          "name": "forename",
+          "type": "Text",
+          "label": "forename"
+        },
+        {
+          "fullyQualifiedName": "surname",
+          "name": "surname",
+          "type": "Text",
+          "label": "surname"
+        },
+        {
+          "fullyQualifiedName": "dob",
+          "name": "dob",
+          "type": "Date",
+          "label": "dob",
+          "format": "yyyy-MM-dd"
+        },
+        {
+          "fullyQualifiedName": "nationality",
+          "name": "nationality",
+          "type": "Text",
+          "label": "nationality"
+        },
+        {
+          "fullyQualifiedName": "url",
+          "name": "url",
+          "type": "Text",
+          "label": "url"
+        }
+      ]
+    }
+  ]
+}

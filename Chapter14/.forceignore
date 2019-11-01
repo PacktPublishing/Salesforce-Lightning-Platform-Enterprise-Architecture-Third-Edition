@@ -1,0 +1,7 @@
+**/jsconfig.json
+**/.eslintrc.json
+# Profiles
+**/profiles/**
+**/settings/**
+# LWC Tests
+**/__tests__/**

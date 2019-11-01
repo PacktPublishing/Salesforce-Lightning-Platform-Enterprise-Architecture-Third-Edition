@@ -1,0 +1,6 @@
+<design:component label="Race Results (Aura)">
+    <design:attribute name="recordId" label="Record Id" />    
+    <sfdc:objects>
+        <sfdc:object>Race__c</sfdc:object>
+    </sfdc:objects>
+</design:component>

@@ -1,0 +1,13 @@
+<apex:page standardController="Race__c" lightningStylesheets="true" extensions="RaceAnalysisController" recordSetVar="Races" readOnly="true">
+	<apex:sectionHeader title="Races to Analyize"/>
+	<apex:pageMessages />
+	<apex:form >
+	<apex:pageBlock >
+		<apex:pageBlockTable value="{!Selected}" var="Race">
+			<apex:column value="{!Race.Name}"/>
+		</apex:pageBlockTable>
+	</apex:pageBlock>
+	<apex:commandButton value="Start Analysis" action="{!analyizeRaceData}"/>
+	<apex:commandButton value="Cancel" action="{!cancel}"/>
+	</apex:form>
+</apex:page>

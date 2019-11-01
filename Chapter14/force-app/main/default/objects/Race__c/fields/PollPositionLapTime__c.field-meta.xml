@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PollPositionLapTime__c</fullName>
+    <externalId>false</externalId>
+    <label>Poll Position Lap Time</label>
+    <summarizedField>Contestant__c.Qualification1LapTime__c</summarizedField>
+    <summaryForeignKey>Contestant__c.Race__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

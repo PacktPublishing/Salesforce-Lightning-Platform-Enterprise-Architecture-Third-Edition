@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FastestSector2Driver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Sector 2 Driver</label>
+    <referenceTo>Contestant__c</referenceTo>
+    <relationshipLabel>Race Statistics (Fastest Sector 2 Driver)</relationshipLabel>
+    <relationshipName>RaceStatisticsFastestSector2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

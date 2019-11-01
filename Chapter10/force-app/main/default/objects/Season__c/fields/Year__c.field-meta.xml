@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Year__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <defaultValue>TEXT(YEAR(TODAY()))</defaultValue>
+    <externalId>true</externalId>
+    <label>Year</label>
+    <length>4</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

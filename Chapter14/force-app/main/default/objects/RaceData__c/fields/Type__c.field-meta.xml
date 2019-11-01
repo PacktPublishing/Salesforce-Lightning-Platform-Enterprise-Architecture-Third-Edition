@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oil Pressure</fullName>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Engine Temperature</fullName>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Track Temperature</fullName>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Tyre Temperature</fullName>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Sector Time</fullName>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Fuel Level</fullName>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Pitstop Time</fullName>
+                <default>false</default>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+</CustomField>
